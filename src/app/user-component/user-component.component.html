@@ -1,0 +1,16 @@
+<!-- <img *ngFor="let item of arreglo" src="{{ item.large }}" alt=""> -->
+<h1 class="text-center my-3 text-uppercase">Listado de personas</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 text-center my-3" *ngFor="let persona of arregloPersonas">
+      <div class="contenedor">
+        <img src="{{ persona.picture.large }}" class="rounded-circle mb-2" alt="...">
+        <h5 class="card-title">{{ persona.name.first }} {{ persona.name.last }}</h5>
+        <p>genero: {{ persona.gender }}</p>
+        <p>email: {{ persona.email }}</p>
+        <p>pais: {{ persona.location.country }}</p>
+        <p>ciudad: {{ persona.location.city }}</p>
+      </div>
+    </div>
+  </div>
+</div>

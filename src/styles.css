@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+p,h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color:rgb(245, 242, 239);
+}
+.contenedor{
+  padding: 10px;
+  border: 1px solid rgb(205, 201, 201);
+  transition: 0.5s;
+}
+
+.contenedor:hover{
+  transform: scale(1.1); /* Igual que: scaleX(0.7) scaleY(0.7) */
+  background-color: rgb(213, 209, 205);
+}
